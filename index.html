@@ -20,14 +20,39 @@
     
     </head>
    
-    <body style = " width: 100%; height: 200px; max-width: 1920px; margin-left: -8px; overflow: hidden;">
-      
+    <body>
+    
         <header>
             <div class="head">
 
                 <h1>cheriched memories</h1>
             </div>
         </header>
+        <div class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">next</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">products</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button5">sign up</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
         <section id="banner">
            <!--- <img src="images/deanface.jpg" class="logo">-->
             <div class="banner-text">
@@ -42,7 +67,8 @@
             </div>
         </section>
 
-        <div id="sideNav">
+        <!--     <div id="sideNav">
+        
             <nav>
                 <ul>
                     <li><a href="#banner">home</a></li>
@@ -55,7 +81,8 @@
         </div>
         <div id="menuBtn">
             <img     src="images/IMG_0925.JPG" >
-        </div>
+        </div>-->
+   
         <!--features-->
         <section id="feature">
             
@@ -69,7 +96,7 @@
                 <div class="row no-gutters">
 
                     <div class="col-md-6 no-gutters">
-                        <div class="leftside ">         <div class="feature-box">
+                        <div class="leftside "> <div class="feature-box">
               
                             <div class="features">
                                 <h1>experianced staff</h1>
@@ -99,7 +126,7 @@
                         
                     </div>
 
-                    <div class="col-md-6 no-gutters">
+                    <div class="col-md-6 no-gutters" data-aos-delay="50000000000000000"data-aos ="zoom-in"data-aos="fade-left" data-aos-duration=" 100000" data-aos-once="false">
                         <div class="rightside d-flex justify-content-center align-items-center">   <img src="images/deanface.jpg"></div>
                     
                     </div>
@@ -376,8 +403,10 @@
 
 
             </section>
+            <script src="app.js"></script>
 
         <script>
+                
             pop_btn = document.querySelector(".button");
                var scroll = new SmoothScroll('a[href*="#"]', {
 	            speed: 2000,
